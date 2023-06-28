@@ -18,9 +18,8 @@ public class Program {
 		lista.add(new Product("tablet", 900.00));
 		// implementando expressao lambda :
 		// inferecia de Tipo
-		Comparator<Product> comp = (p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
 
-		lista.sort(comp);
+		lista.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
 
 		for (Product p : lista) {
 			System.out.println(p);
