@@ -16,15 +16,12 @@ public class Program {
 		lista.add(new Product("tv", 900.00));
 		lista.add(new Product("notebook", 900.00));
 		lista.add(new Product("tablet", 900.00));
-		// implementando em uma classe anonima :
+		// implementando expressao lambda :
 
-		Comparator<Product> comp = new Comparator<Product>() {
+		Comparator<Product> comp = (p1, p2) -> {
 
-			@Override
-			public int compare(Product p1, Product p2) {
+			return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
 
-				return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
-			}
 		};
 		lista.sort(comp);
 
