@@ -16,7 +16,7 @@ public class Program {
 		lista.add(new Product("tv", 900.00));
 		lista.add(new Product("notebook", 900.00));
 		lista.add(new Product("tablet", 900.00));
-		// implementando em uma classe anonima:
+		// implementando em uma classe anonima :
 
 		Comparator<Product> comp = new Comparator<Product>() {
 
